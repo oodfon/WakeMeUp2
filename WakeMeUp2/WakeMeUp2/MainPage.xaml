@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WakeMeUp2"
+             x:Class="WakeMeUp2.MainPage">
+
+  <StackLayout
+  VerticalOptions="Center"
+  HorizontalOptions="Center">
+    
+  <Grid
+			VerticalOptions="FillAndExpand"
+			HorizontalOptions="FillAndExpand">
+
+    <!-- กำหนด 3 แถว-->
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <!-- กำหนด 2 คอลัมภ์-->
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+    <Label Text="Wake Me Up :" Grid.Row="0" Grid.Column="0"/>    
+    <Image Source="sony.png" Grid.Row="1" Grid.Column="0"/>
+    <Button Text="STOP" Grid.Row="2" Grid.Column="0"/>
+
+  </Grid>
+</StackLayout>
+  
+  </ContentPage>
+
